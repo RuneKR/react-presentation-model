@@ -1,0 +1,17 @@
+{
+  "name": "@ords/react-presentation-model",
+  "version": "0.1.0",
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "rxjs": "^6.2.2",
+    "rxjs-compat": "^6.2.2"
+  },
+  "devDependencies": {
+    "typescript": "*",
+    "@types/react": "^16.0.0"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}
