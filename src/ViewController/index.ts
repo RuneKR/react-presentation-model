@@ -5,7 +5,7 @@ import { IPresentationModel } from './../PresentationModel'
 export type presentationModelProvider<T extends object> = () => IPresentationModel<T>
 
 export interface ViewControllerProps<T extends object> {
-  children: (presentationModel: IPresentationModel<T>) => JSX.Element
+  render: (presentationModel: IPresentationModel<T>) => JSX.Element
 }
 export const createViewController = <T extends object>(presentationModelProvider: presentationModelProvider<T>) => (
 
@@ -27,7 +27,7 @@ export const createViewController = <T extends object>(presentationModelProvider
       }
     }
     public render() {
-      return this.props.children(this.presentationModel)
+      return this.props.render(this.presentationModel)
     }
   }
 )

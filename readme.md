@@ -7,7 +7,7 @@ The idea with this component is that you can write framework independent busines
 It should work with all major state management libraries although rxjs is currently used for state sync between ViewController -> PresentationModel.
 
 # Example
-Comming
+Please see the example folder. Remember that all ``../src`` imports should be ``@ords/react-presentation-model`` in your code.
 
 # Feedback
 This is an experiment. Happy to get feedback and improve.
