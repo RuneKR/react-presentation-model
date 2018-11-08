@@ -1,13 +1,9 @@
 import React from 'react'
 import { createViewController } from '../src'
-import { ExamplePresentationModel } from './PresentationModel'
+import { presentationModelFactory } from './presentationModelFactory'
 import { View } from './View'
 
-const presentationModelProvider = () => (
-  new ExamplePresentationModel()
-)
-
-const ViewController = createViewController(presentationModelProvider)
+const ViewController = createViewController(presentationModelFactory)
 
 export default () => (
   <ViewController render={View} />
