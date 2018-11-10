@@ -11,7 +11,7 @@ export const createViewController = <T extends object>(presentationModelProvider
 
   class ViewController extends React.PureComponent<ViewControllerProps<T>> {
     public presentationModel: IPresentationModel<T>
-    private stateSubscription?: Subscription
+    public stateSubscription?: Subscription
     constructor(props) {
       super(props)
       this.presentationModel = presentationModelProvider()

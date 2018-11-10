@@ -10,8 +10,8 @@
     "rxjs-compat": "^6.2.2"
   },
   "devDependencies": {
-    "typescript": "*",
-    "@types/react": "^16.0.0"
+    "@types/react": "^16.0.0",
+    "typescript": "^3.1.6"
   },
   "scripts": {
     "build": "tsc"
