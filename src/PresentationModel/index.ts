@@ -1,8 +1,5 @@
-import { IStateManager, StateManager } from '../StateManager'
-
-export interface IPresentationModel<T extends object> {
-  model: IStateManager<T>
-}
+import { StateManager } from '../StateManager'
+import { IPresentationModel } from '../IPresentationModel'
 
 export class PresentationModel<T extends object> implements IPresentationModel<T> {
   public model: StateManager<T>
