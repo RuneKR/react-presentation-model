@@ -1,7 +1,7 @@
 import React from 'react'
 import { Subscription } from 'rxjs-compat/Subscription'
-import { IPresentationModel } from '../../IPresentationModel'
-import { presentationModelProvider } from '../../presentationModelProvider'
+import { IPresentationModel } from '../IPresentationModel'
+import { presentationModelProvider } from '../presentationModelProvider'
 
 export interface ViewControllerProps<T extends object> {
   render: (presentationModel: IPresentationModel<T>) => JSX.Element
