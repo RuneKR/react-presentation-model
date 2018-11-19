@@ -1,7 +1,7 @@
 import React from 'react'
-import { IExamplePresentationModel } from './PresentationModel'
+import { IExamplePresentation } from './Presentation'
 
-export const View = (presenterModel: IExamplePresentationModel) => {
+export const View = (presenterModel: IExamplePresentation) => {
 
   return (
     presenterModel.model.state.enableSubmit ?
